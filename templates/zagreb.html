@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<style>
+body {
+  background-image: url("https://www.time-matters.com/wp-content/uploads/2017/03/shutterstock_560542039_Croatia.jpg");
+}
+</style>
+
+<center>
+
+<h1 class="vrijeme">VRIJEME DANAS</h1>
+
+<h2 class="lokacija">Lokacija:   {{ data.name}}   </h2>
+
+<h2 class="lokacija">Temperatura:     {{ data.main.temp }} &#176;C </h2>
+
+<img src="http://openweathermap.org/img/w/{{ data.weather[0].icon }}.png" alt="ikona" class="slika">
+</center>
+
+{% endblock content %}
+
+
+
+

@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<style>
+body {
+  background-image: url("http://apoliticni.hr/wp-content/uploads/split-suton.jpg");
+}
+</style>
+<center>
+<h1 class="vrijeme">Vrijeme danas</h1>
+
+<h2 class="lokacija">Lokacija:   {{ data.name}}    </h2>
+
+<h2 class="lokacija">Temperatura:        {{ data.main.temp }} &#176;C </h2>
+
+<img class="slika" src="http://openweathermap.org/img/w/{{ data.weather[0].icon }}.png" alt="ikona">
+</center>
+
+
+{% endblock content %}
+
+</div>
